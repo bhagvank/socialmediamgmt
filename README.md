@@ -50,7 +50,7 @@ bundle install
   * [MySql](https://www.mysql.com/downloads/)
   
   
-2.create a database social_media and a user newuser
+2. create a database social_media and a user newuser
    
 3. run locally using settings (update the database username and password)
 ```

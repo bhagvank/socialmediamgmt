@@ -61,6 +61,3 @@ rails generate migration comments
 rake db:migrate db:seed
 
 ```
-```
-exit
-```  

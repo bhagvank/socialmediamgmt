@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Social Media Mgmt</title>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Social Media Mgmt</h1>
+            <p class="lead">Enterprise Blog</p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <div class="sponsor">
+              <img src="images/logo.jpg" width="150" height="150" class="center" align="middle">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="bs-docs-section clearfix">
+     <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                   
+                    <li class="nav-item active">
+                      <a class="nav-link" href="articles/new">New Article</a>
+                    </li>   
+                    <li class="nav-item active">
+                      <a class="nav-link" href="articles">Articles <span class="sr-only">(current)</span></a>
+                    </li>  
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Sign out</a>
+                       
+                    </li>  
+                  </ul>
+                </div>
+              </nav>
+
+
+    </div>
+  </div>
+<br>
+    <br>
+    <br>
+
+<div class="bs-docs-section">
+        
+ <div class="bs-component">                
+<table class="table table-hover">
+              <thead>
+  <tr>
+    <th scope="col">Title</th>
+    <th scope="col">Text</th>
+              <th scope="col">Show</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Destroy</th>
+  </tr>
+              </thead>
+              <tbody>
+ 
+  <% @articles.each do |article| %>
+    <tr class="table-light">
+      <td scope="row"><%= article.title %></td>
+      <td scope="row"><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+              </tbody>
+</table>
+    </div>
+            </div>
+          </div>
+        </div>
+
+   
+
+
+
+        
+</div>
+
+ 
+</div>
+ </body>
+ </html>

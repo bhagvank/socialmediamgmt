@@ -6,11 +6,11 @@ This project is about a enterprise blogging software in ruby on rails
 
 # Features
 
-1.Creating Articles.
-2.Signup.
-3.Login.
-4.Profile (to be added).
-5.Uploading content (to be added).
+1. Creating Articles.
+2. Signup.
+3. Login.
+4. Profile (to be added).
+5. Uploading content (to be added).
 
 # Social Media Mgmt
 

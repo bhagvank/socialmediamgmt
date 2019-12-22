@@ -1,7 +1,7 @@
 # socialmediamgmt
 This project is about a enterprise blogging software in ruby on rails
 
-![alt text](https://github.com/bhagvank/arc/blob/master/blog_software.jpg.jpg)
+![alt text](https://github.com/bhagvank/arc/blob/master/blog_software.jpg)
 
 
 # Features
@@ -40,7 +40,7 @@ bundle install
 6. Run the server
 ```
 .\bin\rails server
-
+```
 
 # Instructions for setting up database
 1. Ensure that mysql is installed,ruby and rails.
@@ -51,7 +51,6 @@ bundle install
   
   
 2.create a database social_media and a user newuser
-
    
 3. run locally using settings (update the database username and password)
 ```
